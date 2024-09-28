@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x=prompt("first Number", ' ')
+        let y=prompt("second number",' ')
+        function sum(x,y){
+            return Number (x)+ Number (y);  //sum of this two number
+        } 
+        
+        function sub(x,y){
+            return Number (x)- Number (y);
+        }
+        function div(x,y){
+            return Number (x) / Number (y);
+        }
+        
+       
+        function mul(x,y){
+            return Number (x) * Number (y);
+        }
+       document.write(`Sum of ${x} and ${y} is ${sum(x,y)}<br>`);
+       document.write(`Sub of ${x} and ${y} is ${sub(x,y)}<br>`);
+       document.write(`DIV of ${x} and ${y} is ${div(x,y)}<br>`);
+       document.write(`MUL of ${x} and ${y} is ${mul(x,y)}`)
+    </script>
+    
+</body>
+</html>
