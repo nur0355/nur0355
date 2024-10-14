@@ -8,20 +8,25 @@
 <body>
     <div style="text-align: center;">
     <script>
-        let rows=5;
-        for (let i = 0; i < rows; i++) {
+       
+ let n=prompt();
+        for(let row=1;row<=n;row++){
+            //print space
+            for(let col=1;col<=n-row;col++){
+                document.write(" ");
 
-// inner loop 1 to print white spaces
-for (let j = 0; j < 2 * (rows - i) - 1; j++) {
-    document.write(" ");
-}
 
-// inner loop 2 to print star * character
-for (let k = 0; k < 2 * i + 1; k++) {
-    document.write("* ");
-}
-document.write("<br>");
-}
+            }
+            // print star
+            for(let s=1;s<=2*row-1;s++)
+            {
+                //document.write("*");
+                ///document.write(+row)
+                //document.write(+s)
+                document.write()
+            }
+            document.write("<br>")
+        }
     </script>
     </div>
 </body>
