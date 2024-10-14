@@ -8,21 +8,19 @@
 <body>
     <div style="text-align: center;">
         <script>
-            let rows=5;
-            for (let i = 0; i < rows; i++) {
+              let totalrow=prompt();
 
-// first inner loop for printing leading white
-// spaces
-for (let j = 0; j < 2 * i; j++) {
-    document.write(" ");
-}
+            for(let row=totalrow;row>=1;row--){
+                for(let space=1;space<=(totalrow-row);space++){
+                    document.write(" ");
+                }
+                for(let star=1;star<=(2*row)-1;star++){
 
-// second inner loop for printing stars *
-for (let k = 0; k < 2 * (rows - i) - 1; k++) {
-    document.write("* ");
-}
-document.write("<br>")
-}
+                    document.write("*");
+
+                }
+                document.write("<br>")
+            }
         </script>
     </div>
     
